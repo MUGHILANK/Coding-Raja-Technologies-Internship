@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="/welcome.html">Home</a></li>
+                <li><a href="/Page/about.html">About</a></li>
+                <li><a href="/Page/contact.html">Contact</a></li>
+                <!-- Add conditional rendering for admin options -->
+                <li><a href="/ADMIN/admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="post-form">
+            <h2>Create/Edit Post</h2>
+            <form id="create-edit-form">
+                <input type="hidden" id="post-id">
+                <input type="text" id="post-title" placeholder="Enter title" required>
+                <textarea id="post-content" placeholder="Enter content" required></textarea>
+                <input type="text" id="post-categories" placeholder="Enter categories (comma-separated)">
+                <input type="text" id="post-tags" placeholder="Enter tags (comma-separated)">
+                <button type="submit">Save</button>
+            </form>
+        </section>
+        <section id="blog-posts">
+            <!-- Blog posts will be dynamically loaded here -->
+        </section>
+        <section id="search-bar">
+            <h2>Search Posts</h2>
+            <input type="text" id="search-input" placeholder="Enter keywords">
+            <button id="search-button">Search</button>
+           <a href="/Page/view-post.html" <Button id="view-post">View post </Button></a>
+        </section>
+    </main>
+    <footer>
+        <section id="comment-form">
+            <h2>Leave a Comment</h2>
+            <form id="leave-comment-form">
+                <input type="hidden" id="post-id-comment">
+                <input type="text" id="comment-name" placeholder="Your name" required>
+                <textarea id="comment-content" placeholder="Your comment" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="comments">
+            <!-- Comments will be dynamically loaded here -->
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

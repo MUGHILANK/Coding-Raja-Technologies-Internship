@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.features, .cta {
+    margin-bottom: 40px;
+}
+
+.features h2, .cta h2 {
+    text-align: center;
+}
+
+.features ul {
+    list-style-type: circle; ;
+    padding: 0;
+}
+
+.features ul li {
+    margin-bottom: 10px;
+}
+
+.cta {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 60px 24px;
+}
